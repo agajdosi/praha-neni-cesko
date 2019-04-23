@@ -1,0 +1,187 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.site{
+    background-color: lightgray;
+    margin: auto;
+    padding: 105px;
+    min-height: 95vh;
+}
+
+/* TOP */
+.top{
+    background-color: lightgreen;
+    height: 800px;
+    position: relative;
+}
+
+.social{
+    position: absolute;
+    right: 0px;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 20em;
+    height: 100%;
+    position: relative;
+}
+
+.praha{
+    position: absolute;
+    top: 5%;
+}
+
+.neni{
+    position: absolute;
+    right: 0; 
+    top: 0; 
+    bottom: 0; 
+    margin-top: auto; 
+    margin-bottom: auto; 
+    height: 192px; /* trochu hack tady, pri zmene fontu manualne zmenit! */
+}
+
+.cesko{
+    position: absolute;
+    bottom: 5%;
+}
+
+/* ABOUT */
+.about{
+    background-color: lightpink;
+    display: flex;
+    margin: 52px 0 0 0;
+}
+
+.about-left{
+    flex: 1;
+}
+
+.about-right{
+    flex: 2;
+}
+
+/* NAVIGATION */
+.navigation{
+    background-color: lightskyblue;
+    margin: 52px 0 0 0;
+    display: flex;
+}
+
+.navigation-item{
+    flex: 1;
+}
+
+/* CONTENT */
+
+/* VYLETY */
+.vylety{
+    margin: 52px 0 0 0;
+}
+
+.vylet{
+    min-height: 800px;
+    margin: 52px 0 0 0;
+    z-index: 100;
+    background-image: url("../img/homeless.jpg");
+    background-size: 100%;
+    position: relative;
+}
+
+.vylet-popis{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 52px;
+    margin-right: 52px;
+    margin-bottom: 52px;
+    background-color: lightgreen;
+}
+
+.vylet-popis-basic{
+    display: flex;
+    align-items: stretch;
+}
+
+.vylet-popis-extra{
+    display: none;
+}
+
+.vylet-popis-extra-left{
+    flex: 1;
+}
+
+.vylet-popis-extra-right{
+    flex: 1;
+}
+
+.vylet-nazev{
+    flex: 3;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.5em;
+}
+
+.vylet-info{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.vylet-info-row{
+    display: flex;
+}
+
+.vylet-more-info{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vylet-more-info-button{
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+/* O NAS */
+
+/* KONTAKT */
+
+/* GENERAL */
+.flex-one{
+    flex: 1;
+}
+.flex-two{
+    flex: 2;
+}
+.flex-three{
+    flex: 3;
+}
+
+.border-left{
+    box-shadow: 2px 0 0 0 black inset;
+}
+.border-right{
+    box-shadow: -2px 0 0 0 black inset;
+}
+.border-top{
+    box-shadow: 0 2px 0 0 black inset;
+}
+.border-bottom{
+    box-shadow: 0 -2px 0 0 black inset;
+}
+.border-round{
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
