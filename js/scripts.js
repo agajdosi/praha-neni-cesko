@@ -13,3 +13,7 @@ function showSection(sectionID) {
     document.getElementById("section-3").style.display = "none"
     document.getElementById("section-"+sectionID).style.display = "initial"
 }
+
+window.onload = function() {
+    showSection("1");
+}

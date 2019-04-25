@@ -67,7 +67,7 @@ html, body {
 /* NAVIGATION */
 .navigation{
     background-color: lightskyblue;
-    margin: 52px 0 0 0;
+    margin: 52px 0 52px 0;
     display: flex;
 }
 
@@ -78,10 +78,6 @@ html, body {
 /* CONTENT */
 
 /* VYLETY */
-.vylety{
-    margin: 52px 0 0 0;
-}
-
 .vylet{
     min-height: 800px;
     margin: 52px 0 0 0;
@@ -154,7 +150,60 @@ html, body {
 
 /* O NAS */
 
+.onas-foto{
+    margin: 52px 0 52px 0;
+}
+
+.onas-kecy{
+    margin: 52px 0 52px 0;
+}
+
+.onas-lidi{
+    display: flex;
+}
+
+.onas-lidi-left{
+    flex: 1;
+    box-shadow: -2px 0 0 0 black inset;
+}
+
+.onas-lidi-right{
+    flex: 1;
+}
+
+.onas-clovek{
+    flex: 1;
+    height: 400px;
+}
+
+.onas-clovek-foto{
+    margin: 52px;
+}
+
+.onas-clovek-popis{
+    display: flex;
+    box-shadow: 0 2px 0 0 black inset;
+}
+
+.onas-clovek-jmeno{
+    flex: 1;
+    box-shadow: -2px 0 0 0 black inset;
+}
+
+.onas-clovek-funkce{
+    flex: 1;
+}
+
+.onas-clovek-bio{
+    box-shadow: 0 2px 0 0 black inset;
+}
+
 /* KONTAKT */
+
+.kontakty-pro-media{
+    text-align: center;
+    margin: 52px 0 0 0;
+}
 
 /* GENERAL */
 .flex-one{
