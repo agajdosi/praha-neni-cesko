@@ -5,6 +5,12 @@ function showMore(IDNumber) {
     } else {
         document.getElementById("vylet-"+IDNumber).style.display = "flex";
     }
+
+    if (document.getElementById("info-click-"+IDNumber).innerText == "VÍCE INFO") {
+        document.getElementById("info-click-"+IDNumber).innerText = "MÉNĚ INFO"
+    } else {
+        document.getElementById("info-click-"+IDNumber).innerText = "VÍCE INFO"
+    }
 }
 
 function showSection(sectionID) {
