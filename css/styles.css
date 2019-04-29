@@ -8,7 +8,8 @@ html, body {
     margin: auto;
     padding: 105px;
     min-height: 95vh;
-    font-family: "dadagb";
+    font-family: "dadarg";
+    font-size: 1.5em;
 }
 
 @font-face {
@@ -233,7 +234,9 @@ html, body {
 .kontakty-pro-media{
     text-align: center;
     margin: 52px 0 0 0;
+    padding: 0.5em;
 }
+
 
 /* GENERAL */
 .flex-one{
