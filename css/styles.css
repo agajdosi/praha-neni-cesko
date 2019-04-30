@@ -4,7 +4,7 @@ html, body {
 }
 
 .site{
-    background-color: lightgray;
+    background-color: #97bbcb;
     margin: auto;
     padding: 0 105px 105px 105px;
     min-height: 95vh;
@@ -41,7 +41,6 @@ html, body {
 
 /* TOP-ABOUT */
 .about{
-    background-color: lightpink;
     display: flex;
     position: absolute;
     
@@ -79,7 +78,6 @@ html, body {
 
 /* NAVIGATION */
 .navigation{
-    background-color: lightskyblue;
     margin: 52px 0 52px 0;
     display: flex;
 }
