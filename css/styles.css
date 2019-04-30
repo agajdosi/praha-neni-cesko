@@ -6,7 +6,7 @@ html, body {
 .site{
     background-color: lightgray;
     margin: auto;
-    padding: 105px;
+    padding: 0 105px 105px 105px;
     min-height: 95vh;
     font-family: "dadarg";
     font-size: 1.5em;
@@ -24,8 +24,6 @@ html, body {
 
 /* TOP */
 .top{
-    background-color: lightgreen;
-    height: 800px;
     position: relative;
 }
 
@@ -35,61 +33,48 @@ html, body {
     z-index: 10;
 }
 
-.logo{
-    font-size: 20em;
-    height: 100%;
+.logo-image{
+    width: 100%;
+    z-index: 100;
     position: relative;
 }
 
-.praha{
-    position: absolute;
-    top: 5%;
-}
-
-.neni{
-    position: absolute;
-    right: 0; 
-    top: 0; 
-    bottom: 0; 
-    margin-top: auto; 
-    margin-bottom: auto; 
-    height: 192px; /* trochu hack tady, pri zmene fontu manualne zmenit! */
-}
-
-.cesko{
-    position: absolute;
-    bottom: 5%;
-}
-
-/* ABOUT */
+/* TOP-ABOUT */
 .about{
     background-color: lightpink;
     display: flex;
-    margin: 52px 0 0 0;
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 30%;
+    min-height: 122px;
+    z-index: 5;
 }
 
 .about-left{
-    flex: 1;
+    flex: 1 1 0;
 }
 
 .about-right{
-    flex: 2;
+    flex: 1 1 0;
 }
 
 .about-radek{
-    padding: 0.5em;
+    padding: 0.2em;
 }
 
 .about-oval{
-    height: 4em;
-    width: 15em;
+    height: 80%;
+    width: 30%;
     float: right;
     background-size: cover;
     border-radius: 50%;
     border-color: black;
     border-style: solid;
     border-width: 2px;
-    margin: 26px;
+    margin: 10px;
 }
 
 /* NAVIGATION */
