@@ -317,6 +317,16 @@ html, body {
     padding: 0 12px 0 12px;
 }
 
+.soon{
+    text-align: center;
+    font-size: 10em;
+    font-family: "dadarg";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+}
+
 
 /* SCRATCH */
 .bridge {
