@@ -3,10 +3,12 @@ function showMore(IDNumber) {
     if (document.getElementById("vylet-extra-"+IDNumber).style.display == "flex") {
         document.getElementById("vylet-extra-"+IDNumber).style.display = "none";
         document.getElementById("vylet-"+IDNumber).style.minHeight = "600px";
+        console.log(document.getElementById("vylet-"+IDNumber).style.background)
+        document.getElementById("vylet-"+IDNumber).style.background = "../img/vylety/1_up.jpg"
     } else {
         document.getElementById("vylet-extra-"+IDNumber).style.display = "flex";
         document.getElementById("vylet-"+IDNumber).style.minHeight = String(Number(document.getElementById("vylet-extra-"+IDNumber).clientHeight) + 600) + "px";
-        console.log(document.getElementById("vylet-extra-"+IDNumber).clientHeight)
+        document.getElementById("vylet-"+IDNumber).style.background = "../img/vylety/1_down.jpg"
     }
 
     if (document.getElementById("info-click-"+IDNumber).innerText == "VÍCE INFO") {
