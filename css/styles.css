@@ -56,13 +56,13 @@ html, body {
 .about{
     display: flex;
     position: absolute;
-    
     bottom: 0;
     left: 0;
     right: 0;
     max-height: 30%;
     min-height: 122px;
     z-index: 5;
+    font-family: "dadagb";
 }
 
 .about-left{
@@ -93,6 +93,7 @@ html, body {
 .navigation{
     margin: 52px 0 52px 0;
     display: flex;
+    font-family: "dadagb";
 }
 
 .navigation-item{
@@ -112,6 +113,7 @@ html, body {
     background-size: 100%;
     position: relative;
     overflow: hidden;
+    font-family: "dadagb";
 }
 
 .vylet-popis{
@@ -122,7 +124,6 @@ html, body {
     margin-left: 52px;
     margin-right: 52px;
     margin-bottom: 52px;
-    background-color: lightgreen;
 }
 
 .vylet-popis-basic{
@@ -146,7 +147,9 @@ html, body {
     flex: 3;
     display: flex;
     align-items: flex-end;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    font-family: "dadarg";
+    text-transform: uppercase;
 }
 
 .vylet-info{
@@ -163,6 +166,14 @@ html, body {
     flex: 1;
     display: flex;
     align-items: center;
+    font-family: "dadarg";
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.vylet-more-info-text{
+    text-align: center;
+    width: 100%;
 }
 
 .vylet-more-info-button{
@@ -172,6 +183,10 @@ html, body {
     border-width: 2px;
     padding: 10px;
     font-size: 2em;
+}
+
+.vylet-popis-text{
+    font-family: "dadarg";
 }
 
 /* O NAS */
@@ -233,16 +248,17 @@ html, body {
 .onas-clovek-popis{
     display: flex;
     box-shadow: 0 2px 0 0 black inset;
+    font-family: "dadagb";
 }
 
 .onas-clovek-jmeno{
     flex: 1;
-    padding: 1em;
+    padding: 0.3em 1em 0.3em 1em;
     box-shadow: -2px 0 0 0 black inset;
 }
 
 .onas-clovek-funkce{
-    padding: 1em;
+    padding: 0.3em 1em 0.3em 1em;
     flex: 1;
 }
 
