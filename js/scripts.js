@@ -5,7 +5,7 @@ function showMore(IDNumber) {
 
         document.getElementById("vylet-extra-"+IDNumber).style.display = "none";
         document.getElementById("vylet-"+IDNumber).style.minHeight = "869px";
-        document.getElementById("vylet-"+IDNumber).style.backgroundImage="url(img/vylety/"+IDNumber+"_vylet/"+IDNumber+"_vylet_2344×869px.jpg)";
+        //document.getElementById("vylet-"+IDNumber).style.backgroundImage="url(img/vylety/"+IDNumber+"_vylet/"+IDNumber+"_vylet_2344×869px.jpg)";
 
     //SHOW EXTRA
     } else {
