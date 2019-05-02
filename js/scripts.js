@@ -1,15 +1,24 @@
 
 function showMore(IDNumber) {
+    //SHOW LESS
     if (document.getElementById("vylet-extra-"+IDNumber).style.display == "flex") {
+
         document.getElementById("vylet-extra-"+IDNumber).style.display = "none";
-        document.getElementById("vylet-"+IDNumber).style.minHeight = "600px";
-        console.log(document.getElementById("vylet-"+IDNumber).style.background)
-        document.getElementById("vylet-"+IDNumber).style.background = "../img/vylety/1_up.jpg"
+        document.getElementById("vylet-"+IDNumber).style.minHeight = "869px";
+        document.getElementById("vylet-"+IDNumber).style.backgroundImage="url(img/vylety/"+IDNumber+"_vylet/"+IDNumber+"_vylet_2344×869px.jpg)";
+
+    //SHOW EXTRA
     } else {
         document.getElementById("vylet-extra-"+IDNumber).style.display = "flex";
-        document.getElementById("vylet-"+IDNumber).style.minHeight = String(Number(document.getElementById("vylet-extra-"+IDNumber).clientHeight) + 600) + "px";
-        document.getElementById("vylet-"+IDNumber).style.background = "../img/vylety/1_down.jpg"
+        document.getElementById("vylet-"+IDNumber).style.minHeight = String(Number(document.getElementById("vylet-extra-"+IDNumber).clientHeight) + 869) + "px";
+        document.getElementById("vylet-"+IDNumber).style.backgroundImage="url(img/vylety/"+IDNumber+"_vylet/"+IDNumber+"_vylet_2344×869px.gif)";
     }
+
+
+
+
+
+
 
     if (document.getElementById("info-click-"+IDNumber).innerText == "VÍCE INFO") {
         document.getElementById("info-click-"+IDNumber).innerText = "MÉNĚ INFO"

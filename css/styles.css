@@ -106,10 +106,9 @@ html, body {
 
 /* VYLETY */
 .vylet{
-    min-height: 600px;
+    min-height: 869px;
     margin: 52px 0 0 0;
     z-index: 100;
-    background-image: url("../img/homeless.jpg");
     background-size: 100%;
     position: relative;
     overflow: hidden;
@@ -202,6 +201,12 @@ html, body {
 
 .onas-kecy-right{
     flex: 1 1 0;
+}
+
+.onas-rozhovor{
+    text-align: center;
+    margin: 52px 0 52px 0;
+    padding: 0.5em;
 }
 
 .onas-lidi{
