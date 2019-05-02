@@ -15,11 +15,6 @@ function showMore(IDNumber) {
     }
 
 
-
-
-
-
-
     if (document.getElementById("info-click-"+IDNumber).innerText == "VÍCE INFO") {
         document.getElementById("info-click-"+IDNumber).innerText = "MÉNĚ INFO"
     } else {
