@@ -32,5 +32,5 @@ function showSection(sectionID) {
 }
 
 window.onload = function() {
-    showSection("1");
+    showSection("2");
 }

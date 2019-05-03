@@ -18,7 +18,7 @@ html, body {
     padding: 0 105px 105px 105px;
     min-height: 95vh;
     font-family: "dadarg";
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 @font-face {
@@ -50,6 +50,7 @@ html, body {
     width: 100%;
     z-index: 100;
     position: relative;
+    pointer-events:none;
 }
 
 /* TOP-ABOUT */
@@ -282,6 +283,7 @@ html, body {
 
 .onas-clovek{
     flex: 1;
+    position: relative;
 }
 
 .onas-clovek-foto{
@@ -311,7 +313,7 @@ html, body {
 
 .onas-clovek-bio{
     box-shadow: 0 2px 0 0 black inset;
-    min-height: 15vh;
+    min-height: 30vh;
     padding: 1em;
 }
 
@@ -394,15 +396,40 @@ html, body {
     background-color:#daa416;
     font-size:0.7em;
     text-align:"center";
+    z-index: 300;
+    position: relative;
 }
 
 
 
 /* MEDIA QEURRIES */
+@media only screen and (max-width: 2000px) {
+    .onas-clovek-popis{
+        min-height: 63px;
+    }
 
-@media only screen and (max-width: 1300px) {
+    .onas-clovek{
+        min-height: 600px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1350px) {
     .site{
         font-size: 1em;
+    }
+
+    .onas-clovek-popis{
+        font-size: 0.9em;
+    }
+
+    .onas-clovek-funkce{
+        flex: 2;
+    }
+
+    .onas-clovek{
+        min-height: 600px;
     }
 }
 
@@ -410,6 +437,7 @@ html, body {
 
     .site {
         font-size: 1.2em;
+        padding: 0 52px 52px 52px;
     }
 
     .about{
@@ -460,6 +488,10 @@ html, body {
 
     .onas-clovek-foto{
         height: 450px;
+    }
+
+    .onas-clovek-popis{
+        min-height: auto;
     }
 
 
