@@ -326,22 +326,20 @@ html, body {
 }
 
 /* PATICKA */
-.paticka{
-    margin: 105px 0 0 0;
-}
 
 .paticka-df-logo{
-    margin: 0 105px 0 0;
-    height: 15vh;
+    margin: 105px 105px 0 0;
+    height: 128px;
 }
 
 .paticka-df-logo-old{
-    margin: 0 105px 0 0;
-    height: 15vh;
+    margin: 105px 105px 0 0;
+    height: 128px;
 }
 
 .paticka-atelier-logo{
-    height: 15vh;
+    margin: 105px 0 0 0;
+    height: 128px;
 }
 
 /* GENERAL */
@@ -399,6 +397,20 @@ html, body {
     z-index: 300;
     position: relative;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
