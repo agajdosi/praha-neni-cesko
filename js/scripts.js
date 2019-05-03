@@ -1,15 +1,25 @@
-
 function showMore(IDNumber) {
     //SHOW LESS
+    var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    
+    
+    if (w > 2000){
+        var vyletVyska = 869;
+    } else {
+        var vyletVyska = 600;
+    }
+
+    console.log(vyletVyska)
+
     if (document.getElementById("vylet-extra-"+IDNumber).style.display == "flex") {
 
         document.getElementById("vylet-extra-"+IDNumber).style.display = "none";
-        document.getElementById("vylet-"+IDNumber).style.minHeight = "869px";
+        document.getElementById("vylet-"+IDNumber).style.minHeight = String(vyletVyska)+"px";
  
     //SHOW EXTRA
     } else {
         document.getElementById("vylet-extra-"+IDNumber).style.display = "flex";
-        document.getElementById("vylet-"+IDNumber).style.minHeight = String(Number(document.getElementById("vylet-extra-"+IDNumber).clientHeight) + 869) + "px";
+        document.getElementById("vylet-"+IDNumber).style.minHeight = String(Number(document.getElementById("vylet-extra-"+IDNumber).clientHeight) + vyletVyska) + "px";
     }
 
     if (document.getElementById("img-"+IDNumber).getAttribute("src") != "img/vylety/"+IDNumber+"_vylet/"+IDNumber+"_vylet_2344×869px.gif") {
@@ -32,5 +42,5 @@ function showSection(sectionID) {
 }
 
 window.onload = function() {
-    showSection("2");
+    showSection("1");
 }
