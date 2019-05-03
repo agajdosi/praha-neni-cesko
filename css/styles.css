@@ -158,6 +158,10 @@ html, body {
     text-transform: uppercase;
 }
 
+.vylet-nazev-logo{
+    height: 2.5em;
+}
+
 .vylet-info{
     display: flex;
     flex-direction: column;
@@ -386,7 +390,11 @@ html, body {
     color: rgba(255, 255, 255, 0.9);
 }
 
-
+#pq-oval{
+    background-color:#daa416;
+    font-size:0.7em;
+    text-align:"center";
+}
 
 
 
@@ -405,7 +413,21 @@ html, body {
     }
 
     .about{
-        font-size: 0.7em;
+        font-size: 0.6em;
+    }
+
+    .about-left{
+        flex: 2;
+    }
+
+    #ceska-krajina{
+        display: none;
+    }
+
+    #pq-oval{
+        width: 90%;
+        margin: 5px;
+        font-size: 0.9em;
     }
 
     .vylet-more-info-text{
