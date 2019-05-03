@@ -60,7 +60,7 @@ html, body {
     left: 0;
     right: 0;
     max-height: 30%;
-    min-height: 112px;
+    
     z-index: 5;
     font-family: "dadagb";
 }
@@ -384,4 +384,61 @@ html, body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+
+
+/* MEDIA QEURRIES */
+
+@media only screen and (max-width: 1300px) {
+    .site{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .site {
+        font-size: 1.2em;
+    }
+
+    .about{
+        font-size: 0.7em;
+    }
+
+    .vylet-more-info-text{
+        box-shadow: 0 2px 0 0 black inset;
+    }
+
+    .vylet-nazev{
+        box-shadow: 0 -2px 0 0 black inset;
+    }
+
+    .vylet-popis-basic{
+        flex-direction: column;
+    }
+
+    .vylet-popis-extra{
+        flex-direction: column;
+    }
+
+    .onas-kecy{
+        flex-direction: column;
+    }
+    
+    .onas-lidi{
+        flex-direction: column;
+    }
+
+    .onas-clovek{
+        box-shadow: 0 -2px 0 0 black inset;
+    }
+
+    .onas-clovek-foto{
+        height: 450px;
+    }
+
+
 }
