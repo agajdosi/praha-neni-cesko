@@ -126,6 +126,12 @@ html, body {
     margin-bottom: 52px;
 }
 
+.vylet-img{
+    width: 100%;
+    min-height: 869px;
+    margin: auto;
+}
+
 .vylet-popis-basic{
     display: flex;
     align-items: stretch;
