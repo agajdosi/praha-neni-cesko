@@ -326,19 +326,9 @@ html, body {
 
 /* PATICKA */
 
-.paticka-df-logo{
+.paticka-logo{
     margin: 105px 105px 0 0;
-    height: 128px;
-}
-
-.paticka-df-logo-old{
-    margin: 105px 105px 0 0;
-    height: 128px;
-}
-
-.paticka-atelier-logo{
-    margin: 105px 0 0 0;
-    height: 128px;
+    height: 256px;
 }
 
 /* GENERAL */
@@ -510,5 +500,9 @@ html, body {
         min-height: auto;
     }
 
+    .paticka-logo{
+        margin: 52px 52px 0 0;
+        height: 128px;
+    }
 
 }
