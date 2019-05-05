@@ -437,6 +437,11 @@ html, body {
     .onas-clovek{
         min-height: 600px;
     }
+
+    .paticka-logo{
+        margin: 52px 52px 0 0;
+        height: 160px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -501,7 +506,7 @@ html, body {
     }
 
     .paticka-logo{
-        margin: 52px 52px 0 0;
+        margin: 26px 26px 0 0;
         height: 128px;
     }
 
