@@ -29,8 +29,12 @@ function showMore(IDNumber) {
 
     if (document.getElementById("info-click-"+IDNumber).innerText == "VÍCE INFO") {
         document.getElementById("info-click-"+IDNumber).innerText = "MÉNĚ INFO"
-    } else {
+    } else if (document.getElementById("info-click-"+IDNumber).innerText == "MÉNĚ INFO") {
         document.getElementById("info-click-"+IDNumber).innerText = "VÍCE INFO"
+    } else if (document.getElementById("info-click-"+IDNumber).innerText == "MORE INFO") {
+        document.getElementById("info-click-"+IDNumber).innerText = "LESS INFO" 
+    } else {
+        document.getElementById("info-click-"+IDNumber).innerText = "MORE INFO"
     }
 }
 
