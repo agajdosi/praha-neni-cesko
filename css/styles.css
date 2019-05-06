@@ -236,6 +236,30 @@ html, body {
     font-size: 1.2em;
 }
 
+.vylet-narocnost{
+    display: flex;
+    margin: 52px 0 0 0;
+}
+
+.vylet-narocnost-left{
+    flex: 1;
+    box-shadow: -2px 0 0 0 black inset;
+}
+
+.vylet-narocnost-right{
+    flex: 1;
+}
+
+.vylet-narocnost-nadpis{
+    box-shadow: 0 -2px 0 0 black inset;
+    padding: 12px;
+    font-family: "dadagb"
+}
+
+.vylet-narocnost-popis{
+    padding: 12px;
+}
+
 /* O NAS */
 
 .onas-foto{
@@ -483,6 +507,14 @@ html, body {
 
     .vylet-popis-extra{
         flex-direction: column;
+    }
+
+    .vylet-narocnost{
+        flex-direction: column;
+    }
+
+    .vylet-narocnost-left{
+        box-shadow: 0 -2px 0 0 black inset;
     }
 
     .onas-kecy{
