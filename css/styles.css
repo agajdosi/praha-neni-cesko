@@ -156,10 +156,17 @@ html, body {
     font-size: 1.8em;
     font-family: "dadarg";
     text-transform: uppercase;
+    position: relative;
+}
+
+.vylet-cislo{
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
 }
 
 .vylet-nazev-logo{
-    height: 2.5em;
+    height: 100px;
 }
 
 .vylet-info{
