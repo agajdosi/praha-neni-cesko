@@ -2,24 +2,26 @@ function showMore(IDNumber) {
     //SHOW LESS
     var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     
-    
+    console.log(document.getElementById("vylet-extra-"+IDNumber).scrollHeight)
+
     if (w > 2000){
         var vyletVyska = 869;
     } else {
         var vyletVyska = 600;
     }
 
-    console.log(vyletVyska)
 
     if (document.getElementById("vylet-extra-"+IDNumber).style.display == "flex") {
 
         document.getElementById("vylet-extra-"+IDNumber).style.display = "none";
         document.getElementById("vylet-"+IDNumber).style.minHeight = String(vyletVyska)+"px";
+        console.log(document.getElementById("vylet-extra-"+IDNumber).scrollHeight)
  
     //SHOW EXTRA
     } else {
         document.getElementById("vylet-extra-"+IDNumber).style.display = "flex";
         document.getElementById("vylet-"+IDNumber).style.minHeight = String(Number(document.getElementById("vylet-extra-"+IDNumber).clientHeight) + vyletVyska) + "px";
+        console.log(document.getElementById("vylet-extra-"+IDNumber).scrollHeight)
     }
 
     if (document.getElementById("img-"+IDNumber).getAttribute("src") != "img/vylety/"+IDNumber+"_vylet/"+IDNumber+"_vylet_2344×869px.gif") {

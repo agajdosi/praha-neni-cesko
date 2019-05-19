@@ -267,6 +267,10 @@ html, body {
     padding: 12px;
 }
 
+.gout{
+    min-height: 500px;
+}
+
 /* O NAS */
 
 .onas-foto{
@@ -547,6 +551,10 @@ html, body {
     .paticka-logo{
         margin: 26px 26px 0 0;
         height: 128px;
+    }
+
+    .gout{
+        min-height: 250px;
     }
 
 }
