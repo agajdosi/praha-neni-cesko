@@ -31,12 +31,16 @@ function showMore(IDNumber) {
 
     if (document.getElementById("info-click-"+IDNumber).innerText == "VÍCE INFO") {
         document.getElementById("info-click-"+IDNumber).innerText = "MÉNĚ INFO"
+        document.getElementById("info-click-"+IDNumber).style.backgroundImage = "url(img/ikonky/minus.png)";
     } else if (document.getElementById("info-click-"+IDNumber).innerText == "MÉNĚ INFO") {
         document.getElementById("info-click-"+IDNumber).innerText = "VÍCE INFO"
+        document.getElementById("info-click-"+IDNumber).style.backgroundImage = "url(img/ikonky/plus.png)";
     } else if (document.getElementById("info-click-"+IDNumber).innerText == "MORE INFO") {
         document.getElementById("info-click-"+IDNumber).innerText = "LESS INFO" 
+        document.getElementById("info-click-"+IDNumber).style.backgroundImage = "url(img/ikonky/minus.png)";
     } else {
         document.getElementById("info-click-"+IDNumber).innerText = "MORE INFO"
+        document.getElementById("info-click-"+IDNumber).style.backgroundImage = "url(img/ikonky/plus.png)";
     }
 }
 

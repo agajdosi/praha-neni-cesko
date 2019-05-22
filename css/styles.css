@@ -2,11 +2,16 @@ html, body {
     padding: 0;
     margin: 0;
 }
+body {
+    min-width: 500px;
+}
 
  a:link {
     color: black;
     text-decoration: none;
  }
+
+ a:hover {text-decoration: underline}
 
  a:visited{
     color: black;
@@ -15,7 +20,7 @@ html, body {
 .site{
     background-color: #97bbcb;
     margin: auto;
-    padding: 0 105px 105px 105px;
+    padding: 0 50px 50px;
     min-height: 95vh;
     font-family: "dadarg";
     font-size: 1.2em;
@@ -40,10 +45,16 @@ html, body {
     position: absolute;
     right: 0px;
     z-index: 110;
+    font-family: "dadagb";
+    top:50px;
 }
 
 .social-link{
     margin: 0 0 0 30px;
+    font-size:16px !important;
+}
+.social-link:first-child {
+    margin: 0;
 }
 
 .logo-image{
@@ -51,6 +62,7 @@ html, body {
     z-index: 100;
     position: relative;
     pointer-events:none;
+    margin-top:-50px;
 }
 
 /* TOP-ABOUT */
@@ -62,7 +74,7 @@ html, body {
     right: 0;
     max-height: 30%;
     
-    z-index: 5;
+    z-index: 105;
     font-family: "dadagb";
 }
 
@@ -122,9 +134,7 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    margin-left: 52px;
-    margin-right: 52px;
-    margin-bottom: 52px;
+    margin:0 15px 15px;
 }
 
 .vylet-img{
@@ -152,11 +162,39 @@ html, body {
 .vylet-nazev{
     flex: 3;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     font-size: 1.8em;
     font-family: "dadarg";
     text-transform: uppercase;
     position: relative;
+    background-position: 10px center;
+    background-size: auto 78px;
+    background-repeat: no-repeat;
+}
+
+#vylet-1 .vylet-nazev {
+    background-image:url(../img/vylety/1_vylet/1_vylet_logo_lepsi.png);
+    padding-left: 80px;
+}
+#vylet-2 .vylet-nazev {
+    background-image:url(../img/vylety/2_vylet/2_vylet_logo_lepsi.png);
+    padding-left: 55px;
+}
+#vylet-3 .vylet-nazev {
+    background-image:url(../img/vylety/3_vylet/3_vylet_logo_lepsi.png);
+    padding-left: 55px;
+}
+#vylet-4 .vylet-nazev {
+    background-image:url(../img/vylety/4_vylet/4_vylet_logo_lepsi.png);
+    padding-left: 129px;
+}
+#vylet-5 .vylet-nazev {
+    background-image:url(../img/vylety/5_vylet/5_vylet_logo_lepsi.png);
+    padding-left: 122px;
+}
+#vylet-6 .vylet-nazev {
+    background-image:url(../img/vylety/6_vylet/6_vylet_logo_lepsi.png);
+    padding-left: 100px;
 }
 
 .vylet-cislo{
@@ -186,11 +224,15 @@ html, body {
     font-family: "dadarg";
     font-size: 1.5em;
     cursor: pointer;
+    padding-right:17px !important;
 }
 
 .vylet-more-info-text{
-    text-align: center;
+    text-align: left;
     width: 100%;
+    padding: 10px 60px 10px 0;
+    background:url(../img/ikonky/plus.png) no-repeat right center;
+    background-size: 40px 40px;
 }
 
 .vylet-more-info-button{
@@ -275,7 +317,7 @@ html, body {
 
 .onas-foto{
     margin: 52px 0 52px 0;
-    background-image: url(../img/onas/spolecna-fotografie.png);
+    background-image: url(../img/onas/spolecna-fotografie.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -308,7 +350,7 @@ html, body {
 
 .onas-lidi-left{
     flex: 1;
-    box-shadow: -2px 0 0 0 black inset;
+    border-right:2px solid black;
 }
 
 .onas-lidi-right{
@@ -479,11 +521,55 @@ html, body {
     }
 }
 
+@media only screen and (min-width:631px) and (max-width: 980px) {
+    .social {
+        top:0px;
+    }
+    .social a {
+        margin-left:15px;
+    }
+    .logo-image {margin-top:-10px;}
+}
+@media only screen and (max-width: 630px) {
+    .logo-image {
+        margin-bottom:20px;
+        margin-top:-10px;
+    }
+    .social {
+        position: relative;
+        float: right;
+        top:0px;
+    }
+    .social a {
+        margin-left:15px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #vylet-3 .vylet-nazev {
+        font-size:1.3em;
+    }
+}
+@media only screen and (min-width: 1061px) and (max-width: 1150px) {
+    #vylet-3 .vylet-nazev {
+        font-size:1.4em;
+    }
+}
+@media only screen and (min-width: 1151px) and (max-width: 1260px) {
+    #vylet-3 .vylet-nazev {
+        font-size:1.5em;
+    }
+}
+@media only screen and (min-width: 1261px) and (max-width: 1400px) {
+    #vylet-3 .vylet-nazev {
+        font-size:1.7em;
+    }
+}
 @media only screen and (max-width: 1000px) {
 
     .site {
         font-size: 1.2em;
-        padding: 0 52px 52px 52px;
+        padding: 0 25px 25px;
     }
 
     .about{
@@ -504,12 +590,21 @@ html, body {
         font-size: 0.9em;
     }
 
-    .vylet-more-info-text{
+    .vylet-info.border-right {box-shadow:none}
+
+    .vylet-more-info {
         box-shadow: 0 2px 0 0 black inset;
+    }
+    .vylet-more-info-text{
+        line-height: 55px;
+        padding: 0;
+        font-size:0.8em;
     }
 
     .vylet-nazev{
         box-shadow: 0 -2px 0 0 black inset;
+        padding: 10px 0;
+        font-size: 1.3em;
     }
 
     .vylet-popis-basic{
@@ -535,13 +630,19 @@ html, body {
     .onas-lidi{
         flex-direction: column;
     }
-
+    .onas-lidi-left {
+        border-right: none;
+    }
+    .onas-lidi-right .onas-clovek:last-child{
+        box-shadow: none;
+    }
     .onas-clovek{
         box-shadow: 0 -2px 0 0 black inset;
     }
 
     .onas-clovek-foto{
         height: 450px;
+        border-radius: 10px 10px 0 0;
     }
 
     .onas-clovek-popis{
