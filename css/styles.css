@@ -129,6 +129,35 @@ body {
     font-family: "dadagb";
 }
 
+.trailer-open{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 6px 12px 6px 12px;
+    cursor: pointer;
+}
+
+.trailer-close{
+    position: absolute;
+    top:60px;
+    right:60px;
+    padding: 6px 12px 6px 12px;
+    cursor: pointer;
+    z-index:250;
+    font-family: "dadagb";
+    font-size: 1.2em;
+}
+
+#trailer-window{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 120;
+    height: 100vh;
+    width: 100vw;
+}
+
 .vylet-popis{
     position: absolute;
     left: 0;

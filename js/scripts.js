@@ -51,6 +51,29 @@ function showSection(sectionID) {
     document.getElementById("section-"+sectionID).style.display = "initial"
 }
 
+function playTrailer(number){
+    
+    var trailerWindow = document.createElement('div');
+    trailerWindow.id = "trailer-window"
+
+    var file = 'trailerwindow-' + String(number) + '.html' 
+    var req = new XMLHttpRequest();
+    req.open('GET', file, true);
+    req.onreadystatechange = function() {
+        if (this.readyState!==4) return;
+        if (this.status!==200) return;
+        document.getElementById('trailer-window').innerHTML= this.responseText;
+    };
+    req.send();
+
+    document.body.appendChild(trailerWindow);
+}
+
+function closeTrailer(number){
+    trailerWindow = document.getElementById('trailer-window');
+    trailerWindow.parentNode.removeChild(trailerWindow);
+}
+
 window.onload = function() {
     showSection("1");
 }
